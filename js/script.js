@@ -52,3 +52,26 @@ function changeMessage(){
 }
 
 document.querySelector("h1").addEventListener("click",changeMessage);
+
+var cardgr1=["🥳","👾","👻","🤡"];
+var cardgr2=["😡","🍕","🧅","🍺"];
+var cardgr3=["🧬","📐","🩰","🍪"];
+
+//To find a especific element into an array use includes
+console.log(cardgr1.includes("📐"));
+
+var allcards= cardgr1.concat(cardgr2,cardgr3);
+console.log(allcards);
+console.log(allcards.length);
+
+allcards.push("🥩");
+console.log("New item: "+allcards.length);
+
+var nestedarray=[
+    ["🥝","🍎","🍐","🍊"],
+    ["🥑","🌶","🌽","🥔"],
+    ["🌭","🥪","🍤","🥘"],
+    ["🍷","🍺","🍹","🧃"]
+];
+
+console.log(nestedarray[0][3]);
