@@ -13,7 +13,15 @@ function Login(evento){
 
     //feedback.textContent="a message without html";
 
-    feedback.innerHTML=message;
+    if(namefield=="castelldraco" && passfield=="papaya"){
+        feedback.innerHTML=message;
+    }
+    else if(namefield=="castelldraco" && passfield!=="papaya"){
+        feedback.innerHTML="You forget your"+" <b>password</b>";
+    }else{
+        feedback.innerHTML="You are not registered yet";
+    }
+    
 
 }
 
