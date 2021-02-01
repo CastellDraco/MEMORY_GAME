@@ -11,7 +11,6 @@ function Login(evento){
     console.log(namefield);
     console.log(passfield);
 
-    //feedback.textContent="a message without html";
 
     if(namefield=="castelldraco" && passfield=="papaya"){
         feedback.innerHTML=message;

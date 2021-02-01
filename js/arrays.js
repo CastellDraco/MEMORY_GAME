@@ -1,8 +1,11 @@
 
-var cardgroup=["🥝","🍎","🍐"];
+var cardgroup=["🥝","🍰","🍒","🍨"];
 var duplicatedcards=cardgroup.concat(cardgroup);
 
 console.log(table);
+
+
+
 
 function sortCards(){
     var table=document.querySelector("#table");
@@ -13,7 +16,7 @@ function sortCards(){
     
         var singlecard=document.createElement("div");
 
-        singlecard.innerHTML="<div id='card'>"+
+        singlecard.innerHTML="<div class='card'>"+
         "<div class='cardcontent'>"+
         element+
         "</div>"+
@@ -24,4 +27,14 @@ function sortCards(){
     });
 }
 
+function show(){
+    this.classList.add("show");
+}
+
 sortCards();
+
+document.querySelectorAll(".card").forEach(
+    function(element){
+        element.addEventListener("click",show);
+    }
+);

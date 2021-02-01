@@ -1,0 +1,16 @@
+/*CSS taken by reference of Javier Usobiaga Ferrer - Introducción a la programación en JavaScript*/
+:root {
+  --bg: #fafafa;
+  --font: 'Archivo', sans-serif;
+  --font-display: 'Archivo Narrow', sans-serif;
+  --color1: #e09ee0;
+  --color2: #f17f9c;
+  --gradient: linear-gradient(35deg, var(--color1), var(--color2));
+}
+
+body {
+  margin: auto;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: var(--font);
+}
